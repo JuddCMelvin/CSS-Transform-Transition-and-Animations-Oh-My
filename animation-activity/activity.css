@@ -28,13 +28,20 @@ nav {
 }
 
 @keyframes top {
-  100% {transform: rotate(45deg) }
+  /* 100% {transform: rotate(45deg)  } */
+  from { transform: rotate(0);
+  }
+  to {transform: rotate(45deg)
+  }
 }
 
 @keyframes middle {
-  display: none; 
+  from {background-color: rebeccapurple}
+  to {background-color: transparent}
 }
 
 @keyframes bottom {
-  100% {transform: rotate(-45deg) }s
-}
+  from { transform: rotate(0);
+  }
+  to {transform: rotate(-45deg)
+  }
