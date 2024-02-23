@@ -29,19 +29,19 @@ nav {
 
 @keyframes top {
   /* 100% {transform: rotate(45deg)  } */
-  from { transform: rotate(0);
+  from { transform: rotate(0); position: static; top: 0px; 
   }
-  to {transform: rotate(45deg)
+  to {transform: rotate(45deg); top: 25px; position: relative; 
   }
 }
 
 @keyframes middle {
-  from {background-color: rebeccapurple}
-  to {background-color: transparent}
+  from {background-color: rebeccapurple; display: block; }
+  to {background-color: transparent; display: none; }
 }
 
 @keyframes bottom {
-  from { transform: rotate(0);
+  from { transform: rotate(0);position: static; bottom: 0; 
   }
-  to {transform: rotate(-45deg)
+  to {transform: rotate(-45deg); position: relative; bottom: 25px; 
   }
